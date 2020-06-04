@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <svg id="circle__wrapper" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.86 147.86">
+    <circle class="circle" cx="73.93" cy="73.93" r="73.43" stroke='white' stroke-width='25' />
+  </svg>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+  <script>
+    gsap.timeline().to('.circle', 2.5, { strokeDashoffset: '0', ease: Expo.easeInOut  })
+      .to('.circle', 2.5, { strokeDashoffset: '-462', ease: Expo.easeInOut, delay: 1 })
+  </script>
+</body>
+</html>
